@@ -1,8 +1,29 @@
 import java.util.Locale;
 
 public class Point {
-    public double x;
-    public double y;
+    private double x;
+    private double y;
+
+    public Point(){
+        this.x = 0;
+        this.y = 0;
+    }
+    public Point(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+    public Point(Point oldP) {
+        this.x = oldP.x;
+        this.y = oldP.y;
+    }
+
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
 
     @Override
     public String toString() {
